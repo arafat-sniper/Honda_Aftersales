@@ -2063,6 +2063,7 @@ if(typeof faqData !== 'undefined'){ populateFaqProductFilter('all'); bindFaqCont
     if(!LOG_ENDPOINT) return; // safe no-op until you set it
 
     const payload = {
+      key: "HONDA2026LOG",
       event: eventType, // login | logout | view
       userNumber: sessionStorage.getItem(PF_KEY) || '',
       userName: sessionStorage.getItem(NAME_KEY) || '',
